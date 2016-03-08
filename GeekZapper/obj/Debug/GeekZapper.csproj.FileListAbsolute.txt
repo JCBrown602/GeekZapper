@@ -1,0 +1,6 @@
+c:\users\administrator\documents\visual studio 2012\Projects\GeekZapper\GeekZapper\bin\Debug\GeekZapper.exe.config
+c:\users\administrator\documents\visual studio 2012\Projects\GeekZapper\GeekZapper\bin\Debug\GeekZapper.exe
+c:\users\administrator\documents\visual studio 2012\Projects\GeekZapper\GeekZapper\bin\Debug\GeekZapper.pdb
+c:\users\administrator\documents\visual studio 2012\Projects\GeekZapper\GeekZapper\obj\Debug\GeekZapper.csprojResolveAssemblyReference.cache
+c:\users\administrator\documents\visual studio 2012\Projects\GeekZapper\GeekZapper\obj\Debug\GeekZapper.exe
+c:\users\administrator\documents\visual studio 2012\Projects\GeekZapper\GeekZapper\obj\Debug\GeekZapper.pdb
