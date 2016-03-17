@@ -45,12 +45,22 @@ namespace GeekZapper
         {
             while (true)
             {
-                //Thread.Sleep(100);
-                //string process = "geekbuddyrsp";
+                // Sleep time may be a nominal improvement in performance but it works fine like this
+                //  and it was in the tutorial.
+                Thread.Sleep(100);
+                // String for the actual application //string process = "geekbuddyrsp";
+                // Notepad is the test string
                 string process = "notepad";
-                //Console.WriteLine(process.ToUpper());
+
                 Process[] killList = GetProcesses(process);
-                Console.WriteLine("Thread context: " + Thread.CurrentContext.ToString());
+
+                List<Process> processesList = new List<Process>();
+                foreach (Process p in killList)
+                {
+                    processesList.Add(p);
+                }
+
+                //Console.WriteLine("Thread context: " + Thread.CurrentContext.ToString());
                 KillProcess(killList);
             }
         }
@@ -62,7 +72,7 @@ namespace GeekZapper
                 //Thread.Sleep(100);
                 //string process = "nowuseeitplayer";
                 string process = "firefox";
-                //Console.WriteLine(process.ToUpper());
+
                 Process[] killList = GetProcesses(process);
                 KillProcess(killList);
             }
@@ -76,10 +86,11 @@ namespace GeekZapper
 
         static void KillProcess(Process[] byNameArray)
         {
-            List<string> processesList = new List<string>();
             foreach (Process processName in byNameArray)
             {
                 Console.WriteLine("Process: {0} ID: {1}", processName.ProcessName, processName.Id);
+
+
                 processName.Kill();
             }
         }
